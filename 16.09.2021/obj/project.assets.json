@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\05-09-21\\05-09-21.csproj",
-      "projectName": "05-09-21",
-      "projectPath": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\05-09-21\\05-09-21.csproj",
+      "projectUniqueName": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\16.09.2021\\16.09.2021.csproj",
+      "projectName": "16.09.2021",
+      "projectPath": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\16.09.2021\\16.09.2021.csproj",
       "packagesPath": "C:\\Users\\Fariduni S\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\05-09-21\\obj\\",
+      "outputPath": "C:\\Users\\Fariduni S\\Documents\\GitHub\\AcademyLessons\\16.09.2021\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -692,7 +692,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Users\\Fariduni S\\Downloads": {},
-        "E:\\Fariduni S\\Apps\\Nuget Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
