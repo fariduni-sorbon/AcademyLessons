@@ -8,3 +8,4 @@ C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\17-09-21\obj\Debug\netcoreap
 C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\17-09-21\bin\Debug\netcoreapp2.0\17-09-21.pdb
 C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\17-09-21\obj\Debug\netcoreapp2.0\17-09-21.dll
 C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\17-09-21\obj\Debug\netcoreapp2.0\17-09-21.pdb
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\17-09-21\obj\Debug\netcoreapp2.0\17-09-21.csprojResolveAssemblyReference.cache
