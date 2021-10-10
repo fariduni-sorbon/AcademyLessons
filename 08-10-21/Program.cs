@@ -26,43 +26,44 @@ namespace _08_10_21
             }
             try
             {
-                //---------------------------------------------------------------------------
-                Console.WriteLine("\nInsert new Client");
                 Thread thread1 = new Thread(new ThreadStart(InsertClient));
-                thread1.Start();            
+                Thread thread2 = new Thread(new ParameterizedThreadStart(SelectClient));
+                Thread thread3 = new Thread(new ParameterizedThreadStart(UpdateClient));
+                Thread thread4 = new Thread(new ParameterizedThreadStart(DeleteClient));
+                Console.WriteLine("\nInsert new Client");
+                thread1.Start();
+                thread2.Start(3);
+                thread3.Start(3);
                 //---------------------------------------------------------------------------
                 Console.WriteLine("\nSelect Client with id=3");
-                Thread thread2 = new Thread(new ParameterizedThreadStart(SelectClient));
-                thread2.Start(3);
+                if (SelectedClient.Balance!=0)
+                {
+                    Console.WriteLine($"{SelectedClient.Id}. Balance = {SelectedClient.Balance}");
 
-                Console.WriteLine($"{SelectedClient.Id}. Balance = {SelectedClient.Balance}");
-
+                }
                 //---------------------------------------------------------------------------
                 Console.WriteLine("\nUpdate Client balance with Id=3");
-                Thread thread3 = new Thread(new ParameterizedThreadStart(UpdateClient));
-                thread3.Start(3);
                 foreach (var client in clients)
                 {
                     Console.WriteLine($"{client.Id}. Balance = {client.Balance}");
                 }
-
+                thread4.Start(6);
                 //---------------------------------------------------------------------------
-                Console.WriteLine("\nDelete Client with Id=3");
-                Thread thread4 = new Thread(new ParameterizedThreadStart(DeleteClient));
-                thread4.Start(3);
-               
+                Console.WriteLine("\nDelete Client with Id=6");
+
+                foreach (var client in clients)
+                {
+                    Console.WriteLine($"{client.Id}. Balance = {client.Balance}");
+                }
             }
             catch (Exception exc )
             {
                 Console.WriteLine(exc.Message);
             }
-            foreach (var client in clients)
-            {
-                Console.WriteLine($"{client.Id}. Balance = {client.Balance}");
-            }
             Console.ReadLine();
         }
-
+        //-----------------------------------------------
+        //-----------------------------------------------
         static void InsertClient()
         {
             lock (locker)
@@ -75,11 +76,11 @@ namespace _08_10_21
         }
 
         static void SelectClient( object id)
-        {
-         
-                int x = (int)id;
-                Client client = clients.Find((Client c) => { return c.Id == x; });
-                SelectedClient = client;           
+        {           
+            int x = (int)id;
+            Client client = clients.Find((Client c) => { return c.Id == x; });
+            SelectedClient = client;  
+            Thread.Sleep(0);
         }
 
         static void UpdateClient(object id)
@@ -90,7 +91,8 @@ namespace _08_10_21
                 Client client = clients.Find((Client c) => { return c.Id == x; });
                 client.Balance = 340;
             }
-           
+        Thread.Sleep(500);
+
         }
 
         static void DeleteClient(object id)
@@ -101,13 +103,15 @@ namespace _08_10_21
                 Client client = clients.Find((Client c) => { return c.Id == x; });
                 clients.Remove(client);
             }
-           
+            Thread.Sleep(0);
         }
+        //-----------------------------------------------
+        //-----------------------------------------------
     }
 
     class Client
     {
         public int Id { get; set; }
-        public int Balance { get; set; }
+        public int Balance { get; set; }       
     }
 }

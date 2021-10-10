@@ -1,0 +1,11 @@
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\bin\Debug\netcoreapp2.0\10-10-21.deps.json
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\bin\Debug\netcoreapp2.0\10-10-21.runtimeconfig.json
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\bin\Debug\netcoreapp2.0\10-10-21.runtimeconfig.dev.json
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\bin\Debug\netcoreapp2.0\10-10-21.dll
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\bin\Debug\netcoreapp2.0\10-10-21.pdb
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.csprojResolveAssemblyReference.cache
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.csproj.CoreCompileInputs.cache
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.AssemblyInfoInputs.cache
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.AssemblyInfo.cs
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.dll
+C:\Users\Fariduni S\Documents\GitHub\AcademyLessons\10-10-21\obj\Debug\netcoreapp2.0\10-10-21.pdb
